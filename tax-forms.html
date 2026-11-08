@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxpayer Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+  <header class="header-box">
+
+    <h1>Taxpayer Portal</h1>
+    <p>Online Tax Services</p>
+
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./tax-forms.html">Tax Filing</a>
+      <a href="#">Payments</a>
+      <a href="#">Support</a>
+      <a href="#">About</a>
+      
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="Taxpayer-Contact">
+        <h2> Taxpayer Contant </h2>
+        <p>A simple form using text, email, telephone, and submit controls.</p>
+
+        <div>
+            <label for="full name "> Full Name:</label>
+            <input type="text" name="full name " id="full name " placeholder="Please enter your fulll name">
+        </div>
+
+         <div>
+            <label for="email "> Email:</label>
+            <input type="email" name="email " id="emaile  " placeholder="Please enter your Enail">
+        </div>
+
+
+        <div>
+            <label for="Phone number "> Phone:</label>
+            <input type="number" name="" id="Phone number  " placeholder="Please enter your phone number ">
+        </div>
+
+        <button type="submit"> Save Contact</button>
+        
+    </section>
+
+
+
+    <section>
+
+    <fieldset>
+        <legend>2. Choose a Return</legend>
+
+        <p>This form adds select menus, dates, radio buttons, and grouped controls.</p>
+
+        <form>
+
+            <fieldset>
+                <h3>Filing details</h3>
+
+                <label for="tax-type">Tax type</label>
+                <br>
+
+                <select id="tax-type" name="tax-type">
+                    <option value="">Choose a tax type</option>
+                    <option value="income">Income Tax</option>
+                    <option value="vat">VAT</option>
+                    <option value="corporate">Corporate Tax</option>
+                </select>
+
+                <br><br>
+
+                <label for="period">Period ending</label>
+                <br>
+
+                <input type="date" id="period" name="period">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <h3>Return frequency</h3>
+
+                <input type="radio" id="monthly" name="frequency" value="monthly">
+                <label for="monthly">Monthly</label>
+                <br>
+
+                <input type="radio" id="quarterly" name="frequency" value="quarterly">
+                <label for="quarterly">Quarterly</label>
+                <br>
+
+                <input type="radio" id="annual" name="frequency" value="annual">
+                <label for="annual">Annual</label>
+
+            </fieldset>
+
+            <br>
+
+            <button type="button">Continue</button>
+
+        </form>
+
+    </fieldset>
+
+</section>
+
+
+    <section class="Income-Deductions">
+
+        <h2>Income and Deductions</h2>
+        <p>This form introduces number inputs, a datalist, a range control, a textarea, and calculated output.</p>
+        <form>
+            <fieldset>
+                <legend>Tax calculation</legend>
+
+                <div>
+                    <label for="text" >Gross income (OMR)</label>
+                    <input type="text " id="text" name="text">
+                </div> 
+
+                <div>
+                    <label for="text" >Allowable deductions (OMR)</label>
+                    <input type="text " id="text" name="text">
+                </div> 
+            </fieldset>
+            <div>
+                <label for="confidence">confidence </label>
+                <input type="range" id="confidence" min="1" step="1" value="5">
+                <small style="display: block">confidence in this estimate(1-10)</small>
+            </div>
+
+            <dive>
+                <label for="notes">calculation notes</label>
+                <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Notes..."></textarea>
+
+            </dive>
+            <button type="submit">Save calculation</button>
+
+
+
+        </form>
+
+
+
+    </section>
+
+
+   
+     <section>
+        <form>
+           
+            <fieldset>
+                <legend>4. Complete and Submit</legend>
+                <p>The final form combines document upload, checkboxes, month and time controls, a declaration, and reset and submit actions.</p>
+
+                <legend>Supporting records</legend>
+                <label for="accounting-month">Accounting-month:</label>
+                <input class="form-control" type="month" id="accounting-month" name="accounting-month">
+            </br>
+
+                <label for="supporting-document">upload Supporting documents:</label>
+                <input class="form-control" type="file" id="supporting-document" name="supporting-document" accept=".pdf, CSV,.jpg,.png">
+        </br>
+                <small>Accepted formats: PDF, CVS,JPG,PNG </small>
+                 </br>
+                  </br>
+                   </br>
+
+                <div>
+
+                    <span>Records include:</span>
+                     </br>
+                    
+                    <input type="checkbox" id="invoice" name="records" value="invoice">
+                    <label for="invoice">Sales invoice</label>
+
+                </br>
+
+                    <input type="checkbox" id=" expenseReceipts" name="records" value=" Expense receipts">
+                    <label for="invoice"> Expense receipts</label>
+
+                    </br>
+
+                    <input type="checkbox" id=" bankStatement" name="records" value=" Bank statement">
+                    <label for="invoice"> Bank statement</label>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </fieldset>
+             
+        </form>
+    </section>
+   
+
+
+    <fieldset>
+        <legend>Declaration</legend>
+        <label for="segenture">Type your full name as a segenture</label>
+        <input type=" text" name="segenture " id="segenture">
+        <small></small>
+
+    
+
+       <div>
+         <label for="submissions-time">Time signed</label>
+        <input type="time" name="submissions-time " id="submissions-time">
+        <small></small>
+       </div>
+
+       <input type="checkbox" id="declaration" name="declaration" required>
+       <label for="declaration" > I confirm that the information in this practice return is acurate</label>
+
+
+
+
+    </fieldset>
+    <button type="submit"> Submit practice form</button>
+    <button type="reset"> Cleare form</button>
+
+   
+</body>
+
+</html>
