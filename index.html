@@ -10,36 +10,41 @@
 
 <body>
 
-  <!-- BOX 1: Header and Navigation -->
-  <header class="header-box">
+ <form>
+  <fieldset>
+     <header>
 
     <h1>Taxpayer Portal</h1>
     <p>Online Tax Services</p>
 
     <nav>
       <a href="#">Home</a>
-      <a href="#">Tax Filing</a>
+      <a href="./tax-forms.html">Tax Filing</a>
       <a href="#">Payments</a>
       <a href="#">Support</a>
       <a href="#">About</a>
+
     </nav>
 
-    <div class="search-section">
+    <div>
       <label for="search">Search the portal</label>
 
-      <div class="search-box">
+      <div>
         <input type="text" id="search" placeholder="e.g. VAT return">
         <button type="button">Search</button>
       </div>
     </div>
 
   </header>
+  </fieldset>
+ </form>
 
 
   <main>
 
-    <!-- BOX 2: Welcome Section -->
-    <section class="welcome-box">
+   <form>
+    <fieldset>
+      <section >
 
       <h2>Welcome to the Portal</h2>
 
@@ -62,8 +67,8 @@
         Filing types include <u>VAT</u>, <u>CIT</u>, and <u>PIT</u>.
       </p>
 
-      <!-- BOX 3: Dashboard -->
-      <figure class="dashboard-box">
+   
+      <figure >
 
         <img src="./Container.svg" alt="Taxpayer dashboard">
 
@@ -75,39 +80,58 @@
 
     </section>
 
+    </fieldset>
+   </form>
+    
 
-    <!-- BOX 4: Announcement -->
-    <article class="announcement-box">
 
-      <h2>Announcement: VAT Filing Deadline Extended</h2>
+  <form>
+    <fieldset>
+      <article>
 
-      <p>
-        The deadline for quarterly VAT filing has been extended
-        by two weeks to accommodate the recent system
-        maintenance window.
-      </p>
 
-      <blockquote>
-        <i>
-          All pending VAT submissions will now be accepted
-          until the end of the month without penalty.
-        </i>
-      </blockquote>
 
-      <p class="source">
-        Source: Portal Communications Team
-      </p>
+      <div style="
+            margin: 0 auto;
+            width: 900px;
+            color: rgb(0, 0, 0);
+      
+                ">
 
-      <footer>
-        Published:
-        <time datetime="2026-07-20">20 July 2026</time>
-      </footer>
+        <h2>Announcement: VAT Filing Deadline Extended</h2>
+
+        <p>
+          The deadline for quarterly VAT filing has been extended
+          by two weeks to accommodate the recent system
+          maintenance window.
+        </p>
+
+        <blockquote>
+          <i>
+            All pending VAT submissions will now be accepted
+            until the end of the month without penalty.
+          </i>
+        </blockquote>
+
+        <p class="source">
+          Source: Portal Communications Team
+        </p>
+
+        <footer>
+          Published:
+          <time datetime="2026-07-20">20 July 2026</time>
+        </footer>
 
     </article>
+    </fieldset>
+  </form>
+    
 
 
-    <!-- BOX 5: Recent Filing Types -->
-    <section class="filing-box">
+  <form>
+    <fieldset>
+
+      <section>
 
       <h2>Recent Filing Types</h2>
 
@@ -149,73 +173,120 @@
 
     </section>
 
+    </fieldset>
+  </form>
 
-<!-- BOX 6: Quick Links and Help Section -->
-<section class="help-box">
 
-    <h2>Quick Links</h2>
+    
 
-    <ol>
+
+   
+ <form>
+  <fieldset>
+       <section >
+
+      <h2>Quick Links</h2>
+
+      <ol>
         <li><a href="#">How to file a VAT return</a></li>
         <li><a href="#">Payment methods accepted</a></li>
         <li><a href="#">Download tax certificates</a></li>
         <li><a href="#">Contact a support agent</a></li>
-    </ol>
+      </ol>
 
-    <h3>Key Terms</h3>
+      <h3>Key Terms</h3>
 
-    <dl>
+      <dl>
         <dt>VAT</dt>
         <dd>A tax added to most goods and services at the point of sale.</dd>
 
         <dt>Filing Period</dt>
         <dd>The date range a given return or payment covers.</dd>
-    </dl>
+      </dl>
 
-    <h3>Frequently Asked Questions</h3>
+      <h3>Frequently Asked Questions</h3>
 
-    <details>
+      <details>
         <summary>What happens if I miss a filing deadline?</summary>
         <p>You may receive a penalty depending on the applicable tax rules.</p>
-    </details>
+      </details>
 
-    <details>
+      <details>
         <summary>Can I edit a submitted return?</summary>
         <p>You may need to submit an amended return according to tax authority procedures.</p>
-    </details>
+      </details>
 
-</section>
+    </section>
+  </fieldset>
+ </form>
 
-<!-- BOX 7: Footer -->
-<footer class="footer-box">
+ 
+    
 
-    <p>© 2026 Taxpayer Portal. All rights reserved.</p>
+    <section>
+      <form>
+        <fieldset>
+          <legend> personal details </legend>
+          <div>
+            <label for="full name">full name:</label>
+            <input type="text" id="full name " name="full name ">
+          </div>
 
-    <p>
+          <div>
+            <label for="email">email:</label>
+            <input type="email" id="email " name="email ">
+          </div>
+
+          <fieldset>
+
+          </fieldset>
+          <legend> payment details </legend>
+          <div>
+            <label for="amont">amont:</label>
+            <input type="number" id="amont " name="amont ">
+          </div>
+
+          <div>
+            <label for="type">Tax type:</label>
+            <select id="type" name="type"></select>
+            <option value="cit">CIT</option>
+            <option value="vat">VAT</option>
+            <option value="pit">PIT</option>
+          </div>
+
+        </fieldset>
+      </form>
+    </section>
+
+
+
+    <form>
+      <fieldset>
+        <footer>
+
+      <p>© 2026 Taxpayer Portal. All rights reserved.</p>
+
+      <p>
         Support:
         <a href="mailto:support@example.com">
-            support@example.com
+          support@example.com
         </a>
         |
         Phone:
         <a href="tel:+96812345678">
-            +968 1234 5678
+          +968 1234 5678
         </a>
-    </p>
+      </p>
 
-    <nav class="footer-links">
+      <nav class="footer-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
         <a href="#">Contact Us</a>
-    </nav>
+      </nav>
 
-</footer>
-
-
-
-
-    
-
+    </footer>
+      </fieldset>
+    </form>
 
   </main>
 
