@@ -177,6 +177,7 @@ article p {
 
 .trcol{
 background: #1A4E8A;
+color: #F4f6f9;
 
 }
 
@@ -189,10 +190,38 @@ background: #1A4E8A;
 
 }
 
-.progress-wrappe{
-margin-top: 39px;
-width: 49%;
-display: flex;
-justify-content: space-between;
 
+.progress-wrapper{
+margin-top: 20px;
+width: 49%;
+display:inline-block;
+
+}
+
+
+.filling-types table {
+width: 100%;
+}
+
+.filling-types th {
+background-color: var(--primary-color); 
+color: var(--color4); 
+text-align: left;
+}
+
+.filling-types td {
+border: 1px solid #C8D8EF;
+}
+
+.filling-types tr:nth-child{
+background-color: var(--therd-color);
+}
+.filling-types  {
+color: var(--primary-color); 
+margin: 10px 0;
+}
+
+.ft{
+    background-color: var(--primary-color);
+    color: #C8D8EF;
 }
