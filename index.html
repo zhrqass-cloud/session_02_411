@@ -5,19 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taxpayer Portal</title>
+  <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
 
- <form>
-  <fieldset>
-     <header>
+
+<div class="container">
+  <body>
+
+  <header class="header">
 
     <h1>Taxpayer Portal</h1>
-    <p>Online Tax Services</p>
+    <p class="sub-title">Online Tax Services</p>
 
-    <nav>
+    <nav class=" header a ">
       <a href="#">Home</a>
       <a href="./tax-forms.html">Tax Filing</a>
       <a href="#">Payments</a>
@@ -25,26 +28,24 @@
       <a href="#">About</a>
 
     </nav>
-
+ 
     <div>
-      <label for="search">Search the portal</label>
+      <label class="search-lable" for="search">Search the portal</label>
 
-      <div>
-        <input type="text" id="search" placeholder="e.g. VAT return">
+     <form >
+       <div>
+        <input class="search-input" type="text" id="search" placeholder="e.g. VAT return">
         <button type="button">Search</button>
       </div>
     </div>
+     </form>
 
   </header>
-  </fieldset>
- </form>
 
 
   <main>
 
-   <form>
-    <fieldset>
-      <section >
+      <section  class="Welcome">
 
       <h2>Welcome to the Portal</h2>
 
@@ -63,40 +64,26 @@
         <mark>New users must verify their email before submitting a first return.</mark>
       </p>
 
-      <p>
+      <p >
         Filing types include <u>VAT</u>, <u>CIT</u>, and <u>PIT</u>.
       </p>
 
    
       <figure >
 
-        <img src="./Container.svg" alt="Taxpayer dashboard">
+        <img class="img" src="./Container.svg" alt="Taxpayer dashboard">
 
-        <figcaption>
+        <figcaption class="figcaption">
           Figure 1: Overview of the taxpayer dashboard
         </figcaption>
 
       </figure>
 
     </section>
-
-    </fieldset>
-   </form>
     
+    <article>
 
-
-  <form>
-    <fieldset>
-      <article>
-
-
-
-      <div style="
-            margin: 0 auto;
-            width: 900px;
-            color: rgb(0, 0, 0);
-      
-                ">
+      <div>
 
         <h2>Announcement: VAT Filing Deadline Extended</h2>
 
@@ -106,14 +93,14 @@
           maintenance window.
         </p>
 
-        <blockquote>
+        <blockquote class="announcement-blockquote">
           <i>
             All pending VAT submissions will now be accepted
             until the end of the month without penalty.
           </i>
         </blockquote>
 
-        <p class="source">
+        <p class="announcement figcaption">
           Source: Portal Communications Team
         </p>
 
@@ -123,66 +110,53 @@
         </footer>
 
     </article>
-    </fieldset>
-  </form>
     
 
 
-  <form>
-    <fieldset>
+     
+<section>
 
-      <section>
+    <h2>Recent Filing Types</h2>
 
-      <h2>Recent Filing Types</h2>
+    <table class="filling-types">
 
-      <table>
-
-        <caption>Filing status for the current period</caption>
+        <caption class="filing-overall">
+            Filing status for the current period
+        </caption>
 
         <thead>
-          <tr>
-            <th>Tax Type</th>
-            <th>Filing Period</th>
-            <th>Status</th>
-          </tr>
+            <tr>
+                <th>Tax Type</th>
+                <th>Filing Period</th>
+                <th>Status</th>
+            </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td><strong>VAT</strong></td>
-            <td>Q2 2026</td>
-            <td>Submitted</td>
-          </tr>
+            <tr>
+                <td class="ft"><strong>VAT</strong></td>
+                <td>Q2 2026</td>
+                <td>Submitted</td>
+            </tr>
 
-          <tr>
-            <td><strong>CIT</strong></td>
-            <td>2025 Annual</td>
-            <td>Pending</td>
-          </tr>
+            <tr>
+                <td class="ft"><strong >CIT</strong></td>
+                <td>2025 Annual</td>
+                <td>Pending</td>
+            </tr>
 
-          <tr>
-            <td><strong>PIT</strong></td>
-            <td>2025 Annual</td>
-            <td>Draft</td>
-          </tr>
+            <tr>
+                <td class="ft "><strong>PIT</strong></td>
+                <td>2025 Annual</td>
+                <td>Draft</td>
+            </tr>
         </tbody>
 
-      </table>
+    </table>
 
-      <progress value="70" max="100"></progress>
-
-    </section>
-
-    </fieldset>
-  </form>
-
-
-    
-
+</section>
 
    
- <form>
-  <fieldset>
        <section >
 
       <h2>Quick Links</h2>
@@ -217,15 +191,10 @@
       </details>
 
     </section>
-  </fieldset>
- </form>
-
- 
-    
 
     <section>
-      <form>
-        <fieldset>
+        <form>
+          <fieldset>
           <legend> personal details </legend>
           <div>
             <label for="full name">full name:</label>
@@ -253,16 +222,12 @@
             <option value="vat">VAT</option>
             <option value="pit">PIT</option>
           </div>
-
-        </fieldset>
-      </form>
+        </form>
     </section>
 
 
 
-    <form>
-      <fieldset>
-        <footer>
+    <footer>
 
       <p>© 2026 Taxpayer Portal. All rights reserved.</p>
 
@@ -284,12 +249,18 @@
         <a href="#">Contact Us</a>
       </nav>
 
-    </footer>
-      </fieldset>
-    </form>
+      <div class="line">
 
+      </div>
+
+    </footer>
   </main>
 
 </body>
+
+
+  </div>
+
+
 
 </html>
