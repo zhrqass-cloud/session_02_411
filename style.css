@@ -1,12 +1,12 @@
 
 body {
-    font-family: Georgia;
+    font-family: Georgia, serif;
 }
 
-.container{
+.container {
     margin: 36px auto;
     padding: 20px;
-    max-width:  800px; 
+    max-width: 800px;
     background-color: rgb(210, 215, 220);
 }
 
@@ -14,42 +14,31 @@ body {
     width: 100%;
 }
 
-
-.body ,h1,h2,h3,h4,p{
-
+.body, h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     color: aliceblue;
-padding-top: 24px;
-padding-right: 24px;
-padding-bottom: 16px;
-padding-left: 24px;
-border-bottom-right-radius: 8px;
-border-bottom-left-radius: 8px;
-background-color: #1A4E8A;
-
-
+    padding: 24px 24px 16px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #1A4E8A;
 }
 
-
-h1{
-
-    font-weight: 700px; ;
+h1 {
+    font-weight: 700;
     font-size: 32px;
     letter-spacing: 0.5px;
-    color: #F4f6f9;
+    color: #F4F6F9;
 }
 
-
-.sub-title{
+.sub-title {
     margin-top: 10px;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: italic;
     color: #f5f3f3;
-
 }
 
 header nav {
@@ -63,165 +52,372 @@ header a {
     background-color: #3482da;
     text-decoration: none;
     border-radius: 4px;
-
 }
 
-header a:hover{
+header a:hover {
     background-color: #457ebe;
 }
 
-
-.line{
+.line {
     margin-top: 24px;
     margin-bottom: 30px;
     height: 1px;
     background-color: #3f8ce4;
-
 }
 
-
-
-.search-lable{
+.search-lable {
     font-weight: 400;
     font-size: 14px;
-    color:#f5f3f3;
-
-
-
-}
-
-.search-input{
-    padding: 12px 5px;
-    background: none;
     color: #f5f3f3;
-
 }
 
-
-section{
-
-background:#FFF;
-margin-top: 24PX;
-padding: 24PX;
-border-radius: 4PX;
-border: 1px solid #D0DCE8;
+.search-input {
+    padding: 12px 5px;
+    color: #f5f3f3;
 }
 
+section {
+    background: #FFF;
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 4px;
+    border: 1px solid #D0DCE8;
+}
 
-section h2{
+section h2 {
     color: #1A4E8A;
     font-size: 22px;
     padding: 10px;
-
     border-bottom: 2px solid;
-
 }
 
 section p {
-
-font-size: 16px;
-
-margin-top:20px ;
-line-height:28px ;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 28px;
 }
 
-
-figure img{
-    width: 850;
-    height: 32;
-   padding-top: 8px;
-
-
+ffigure img {
+    width: 850px;
+    height: auto;
+    padding-top: 8px;
 }
-
-
-.figcaption{
+.figcaption {
     font-size: small;
-   padding-top: 8px;
-   color: rgb(123, 130, 136);
-   font-style: italic;
-
+    padding-top: 8px;
+    color: rgb(123, 130, 136);
+    font-style: italic;
 }
 
-
-article h2{
+article h2 {
     color: #1A4E8A;
 }
 
-
 article p {
-    color: #2C2C2C ;
-    line-height:28px ;
-
+    color: #2C2C2C;
+    line-height: 28px;
 }
 
-.announcement figure{
+.announcement figure {
     margin-top: 26px;
 }
 
-.announcement-blockquote{
-    background-color: #F4f6f9;
-    border-left: 4px;
+.announcement-blockquote {
+    background-color: #F4F6F9;
+    border-left: 4px solid #1A4E8A;
     padding: 26px;
     font-style: italic;
 }
 
-.announcement figcaption{
-    color:#6666;
+.announcement figcaption {
+    color: #666;
     margin-top: 24px;
 }
 
-.announcement-date{
+.announcement-date {
     margin-top: 24px;
 }
 
-.trcol{
-background: #1A4E8A;
-color: #F4f6f9;
-
+.trcol {
+    background: #1A4E8A;
+    color: #F4F6F9;
 }
 
-
-
-.filing-overall{
+.filing-overall {
     color: #1A4E8A;
-    margin-left:-50px;
-
-
+    margin-left: -50px;
 }
 
-
-.progress-wrapper{
-margin-top: 20px;
-width: 49%;
-display:inline-block;
-
+.progress-wrapper {
+    margin-top: 20px;
+    width: 49%;
+    display: inline-block;
 }
-
 
 .filling-types table {
-width: 100%;
+    width: 100%;
 }
 
 .filling-types th {
-background-color: var(--primary-color); 
-color: var(--color4); 
-text-align: left;
+    background-color: var(--primary-color);
+    color: var(--color4);
+    text-align: left;
 }
 
 .filling-types td {
-border: 1px solid #C8D8EF;
+    border: 1px solid #C8D8EF;
 }
 
-.filling-types tr:nth-child{
-background-color: var(--therd-color);
-}
-.filling-types  {
-color: var(--primary-color); 
-margin: 10px 0;
+.filling-types tr:nth-child(even) {
+    background-color: var(--therd-color);
 }
 
-.ft{
+.filling-types {
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.ft {
     background-color: var(--primary-color);
     color: #C8D8EF;
 }
+
+.payment-secure {
+    position: relative;
+}
+
+.payment-secure::after {
+    content: 'secure';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 14px;
+    background-color: rgb(162, 233, 209);
+    color: rgb(30, 32, 32);
+    font-weight: 700;
+    padding: 12px 16px;
+}
+
+.payment-secure:hover::after {
+    background-color: rgb(152, 244, 213);
+}
+
+.registere-payment label::after {
+    content: "*";
+    color: red;
+    padding-left: 5px;
+}
+
+.registere-payment fieldset {
+    background-color: #f4f6fa;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #D0DCE8;
+    color: #1A4E8A;
+}
+
+.registere-payment label {
+    margin-top: 16px;
+    display: block;
+    font-weight: bold;
+    color: #1A4E8A;
+}
+
+.registere-payment input,
+.registere-payment select {
+    width: 100%;
+    margin-top: 5px;
+    height: 36px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.checkbox-wrapper label {
+    font-weight: 700;
+}
+
+.checkbox-wrapper input {
+    width: 15px;
+    height: 16px;
+}
+
+.registere-payment button:hover {
+    background-color: #1A4E8A;
+    color: #f4f6fa;
+}
+
+.registere-payment button {
+    border: 1px solid;
+    padding: 11px 25px;
+    color: #1A4E8A;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: ease .3s;
+}
+
+/* Quick Links section */
+
+.help-section {
+    background-color: #eef4fc;
+    border: 1px solid #cbd9eb;
+    padding: 23px;
+    color: #294b73;
+    font-family: Georgia, serif;
+}
+
+.final-info h3 {
+    color: #1A4E8A;
+    font-size: 18px;
+}
+
+.quick-links h2 {
+    color: #1e5088;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d1dfed;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.quick-links li {
+    position: relative;
+    width: 100%;
+    padding: 11px 0;
+    border-bottom: 1px solid #d1dfed;
+}
+
+.quick-links li:last-child {
+    border-bottom: none;
+}
+
+.quick-links a {
+    display: block;
+    width: 100%;
+    color: #1e5088;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+    padding-right: 25px;
+}
+
+.quick-links a::after {
+    content: "→";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Key Terms */
+
+.key-terms h3,
+.faq-section h3 {
+    color: #304f76;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.key-terms dt {
+    color: #1e5088;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.key-terms dd {
+    color: #555;
+    margin-left: 15px;
+    line-height: 1.5;
+}
+
+/* Frequently Asked Questions */
+
+.faq-section details {
+    background-color: white;
+    border: 1px solid #c5d8ee;
+    border-radius: 6px;
+    margin-bottom: 9px;
+    padding: 13px;
+}
+
+.faq-section summary {
+    color: #1e5088;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-section summary::after {
+    content: "+";
+    float: right;
+}
+
+.faq-section details[open] summary::after {
+    content: "−";
+}
+
+.faq-section details p {
+    color: #555;
+    margin-top: 12px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1e5088;
+    color: white;
+    padding: 20px 23px;
+    margin-top: 22px;
+    font-size: 14px;
+    font-family: Georgia, serif;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #a9c7e8;
+    text-decoration: none;
+}
+
+.footer-links {
+    border-top: 1px solid #426b99;
+    padding-top: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .help-section {
+        padding: 16px;
+    }
+
+    .quick-links a {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 18px 16px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+} give me same as my style I don't study this
